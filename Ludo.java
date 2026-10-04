@@ -7,6 +7,7 @@ public class Ludo {
         Random random = new Random();
         Scanner input = new Scanner(System.in);
 
+        // Current player
         int player = 1;
 
         // Player 1 tokens
@@ -35,13 +36,41 @@ public class Ludo {
 
             System.out.println("Player " + player + " rolled: " + dice);
 
-            // If dice is 6, bring Token 1 out
+            // If dice is 6, choose a token
             if (dice == 6) {
 
+                System.out.println("Choose a token:");
+                System.out.println("1. Token 1");
+                System.out.println("2. Token 2");
+                System.out.println("3. Token 3");
+                System.out.println("4. Token 4");
+
+                int choice = input.nextInt();
+                input.nextLine();
+
                 if (player == 1) {
-                    player1Token1 = 1;
+
+                    if (choice == 1) {
+                        player1Token1 = 1;
+                    } else if (choice == 2) {
+                        player1Token2 = 1;
+                    } else if (choice == 3) {
+                        player1Token3 = 1;
+                    } else if (choice == 4) {
+                        player1Token4 = 1;
+                    }
+
                 } else {
-                    player2Token1 = 1;
+
+                    if (choice == 1) {
+                        player2Token1 = 1;
+                    } else if (choice == 2) {
+                        player2Token2 = 1;
+                    } else if (choice == 3) {
+                        player2Token3 = 1;
+                    } else if (choice == 4) {
+                        player2Token4 = 1;
+                    }
                 }
             }
 
