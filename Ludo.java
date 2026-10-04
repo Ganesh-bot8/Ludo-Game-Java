@@ -35,7 +35,7 @@ public class Ludo {
 
             System.out.println("Player " + player + " rolled: " + dice);
 
-            // If dice is 6, choose a token to bring out
+            // If dice is 6, choose a token
             if (dice == 6) {
 
                 System.out.println("Choose a token:");
@@ -50,25 +50,63 @@ public class Ludo {
                 if (player == 1) {
 
                     if (choice == 1) {
-                        player1Token1 = 1;
+                        if (player1Token1 == 0) {
+                            player1Token1 = 1;
+                        } else {
+                            player1Token1 = player1Token1 + 6;
+                        }
+
                     } else if (choice == 2) {
-                        player1Token2 = 1;
+                        if (player1Token2 == 0) {
+                            player1Token2 = 1;
+                        } else {
+                            player1Token2 = player1Token2 + 6;
+                        }
+
                     } else if (choice == 3) {
-                        player1Token3 = 1;
+                        if (player1Token3 == 0) {
+                            player1Token3 = 1;
+                        } else {
+                            player1Token3 = player1Token3 + 6;
+                        }
+
                     } else if (choice == 4) {
-                        player1Token4 = 1;
+                        if (player1Token4 == 0) {
+                            player1Token4 = 1;
+                        } else {
+                            player1Token4 = player1Token4 + 6;
+                        }
                     }
 
                 } else {
 
                     if (choice == 1) {
-                        player2Token1 = 1;
+                        if (player2Token1 == 0) {
+                            player2Token1 = 1;
+                        } else {
+                            player2Token1 = player2Token1 + 6;
+                        }
+
                     } else if (choice == 2) {
-                        player2Token2 = 1;
+                        if (player2Token2 == 0) {
+                            player2Token2 = 1;
+                        } else {
+                            player2Token2 = player2Token2 + 6;
+                        }
+
                     } else if (choice == 3) {
-                        player2Token3 = 1;
+                        if (player2Token3 == 0) {
+                            player2Token3 = 1;
+                        } else {
+                            player2Token3 = player2Token3 + 6;
+                        }
+
                     } else if (choice == 4) {
-                        player2Token4 = 1;
+                        if (player2Token4 == 0) {
+                            player2Token4 = 1;
+                        } else {
+                            player2Token4 = player2Token4 + 6;
+                        }
                     }
                 }
 
@@ -88,12 +126,16 @@ public class Ludo {
 
                     if (choice == 1 && player1Token1 > 0) {
                         player1Token1 = player1Token1 + dice;
+
                     } else if (choice == 2 && player1Token2 > 0) {
                         player1Token2 = player1Token2 + dice;
+
                     } else if (choice == 3 && player1Token3 > 0) {
                         player1Token3 = player1Token3 + dice;
+
                     } else if (choice == 4 && player1Token4 > 0) {
                         player1Token4 = player1Token4 + dice;
+
                     } else {
                         System.out.println("This token is not out yet.");
                     }
@@ -102,12 +144,16 @@ public class Ludo {
 
                     if (choice == 1 && player2Token1 > 0) {
                         player2Token1 = player2Token1 + dice;
+
                     } else if (choice == 2 && player2Token2 > 0) {
                         player2Token2 = player2Token2 + dice;
+
                     } else if (choice == 3 && player2Token3 > 0) {
                         player2Token3 = player2Token3 + dice;
+
                     } else if (choice == 4 && player2Token4 > 0) {
                         player2Token4 = player2Token4 + dice;
+
                     } else {
                         System.out.println("This token is not out yet.");
                     }
