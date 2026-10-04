@@ -127,11 +127,17 @@ public class Ludo {
             System.out.println("Player 2 Token 3: " + player2Token3);
             System.out.println("Player 2 Token 4: " + player2Token4);
 
-            // Change player
-            if (player == 1) {
-                player = 2;
+            // Change player only when dice is NOT 6
+            if (dice != 6) {
+
+                if (player == 1) {
+                    player = 2;
+                } else {
+                    player = 1;
+                }
+
             } else {
-                player = 1;
+                System.out.println("You rolled a 6! You get another turn.");
             }
         }
     }
