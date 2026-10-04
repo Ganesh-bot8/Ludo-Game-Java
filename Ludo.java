@@ -9,6 +9,11 @@ public class Ludo {
 
         int player = 1;
 
+        int token1 = 0;
+        int token2 = 0;
+        int token3 = 0;
+        int token4 = 0;
+
         System.out.println("Welcome to Ludo Game!");
 
         while (true) {
