@@ -1,5 +1,10 @@
-public class Ludo {
+import java.util.Random;
+  
+  public class Ludo {
     public static void main (String[] args) {
-  System.out.println("Welcome to Ludo Game");
+   Random random = new Random();
+    int dice = random.nextInt(6) + 1;
+
+  System.out.println("You rolled: " + dice);
  }
 }
