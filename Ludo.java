@@ -27,6 +27,11 @@ public class Ludo {
 
             System.out.println("Player " + player + " rolled: " + dice);
 
+System.out.println("Token 1: " + token1);
+System.out.println("Token 2: " + token2);
+System.out.println("Token 3: " + token3);
+System.out.println("Token 4: " + token4);
+
             if (player == 1) {
                 player = 2;
             } else {
