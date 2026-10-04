@@ -51,6 +51,7 @@ public class Ludo {
                 if (player == 1) {
 
                     if (choice == 1) {
+
                         if (player1Token1 == 0) {
                             player1Token1 = 1;
                         } else if (player1Token1 + 6 <= finishPosition) {
@@ -60,6 +61,7 @@ public class Ludo {
                         }
 
                     } else if (choice == 2) {
+
                         if (player1Token2 == 0) {
                             player1Token2 = 1;
                         } else if (player1Token2 + 6 <= finishPosition) {
@@ -69,6 +71,7 @@ public class Ludo {
                         }
 
                     } else if (choice == 3) {
+
                         if (player1Token3 == 0) {
                             player1Token3 = 1;
                         } else if (player1Token3 + 6 <= finishPosition) {
@@ -78,6 +81,7 @@ public class Ludo {
                         }
 
                     } else if (choice == 4) {
+
                         if (player1Token4 == 0) {
                             player1Token4 = 1;
                         } else if (player1Token4 + 6 <= finishPosition) {
@@ -90,6 +94,7 @@ public class Ludo {
                 } else {
 
                     if (choice == 1) {
+
                         if (player2Token1 == 0) {
                             player2Token1 = 1;
                         } else if (player2Token1 + 6 <= finishPosition) {
@@ -99,6 +104,7 @@ public class Ludo {
                         }
 
                     } else if (choice == 2) {
+
                         if (player2Token2 == 0) {
                             player2Token2 = 1;
                         } else if (player2Token2 + 6 <= finishPosition) {
@@ -108,6 +114,7 @@ public class Ludo {
                         }
 
                     } else if (choice == 3) {
+
                         if (player2Token3 == 0) {
                             player2Token3 = 1;
                         } else if (player2Token3 + 6 <= finishPosition) {
@@ -117,6 +124,7 @@ public class Ludo {
                         }
 
                     } else if (choice == 4) {
+
                         if (player2Token4 == 0) {
                             player2Token4 = 1;
                         } else if (player2Token4 + 6 <= finishPosition) {
@@ -146,7 +154,9 @@ public class Ludo {
                         if (player1Token1 + dice <= finishPosition) {
                             player1Token1 = player1Token1 + dice;
                         } else {
-                            System.out.println("Cannot move. You need an exact number to reach home.");
+                            System.out.println(
+                                "Cannot move. You need an exact number to reach home."
+                            );
                         }
 
                     } else if (choice == 2 && player1Token2 > 0) {
@@ -154,7 +164,9 @@ public class Ludo {
                         if (player1Token2 + dice <= finishPosition) {
                             player1Token2 = player1Token2 + dice;
                         } else {
-                            System.out.println("Cannot move. You need an exact number to reach home.");
+                            System.out.println(
+                                "Cannot move. You need an exact number to reach home."
+                            );
                         }
 
                     } else if (choice == 3 && player1Token3 > 0) {
@@ -162,7 +174,9 @@ public class Ludo {
                         if (player1Token3 + dice <= finishPosition) {
                             player1Token3 = player1Token3 + dice;
                         } else {
-                            System.out.println("Cannot move. You need an exact number to reach home.");
+                            System.out.println(
+                                "Cannot move. You need an exact number to reach home."
+                            );
                         }
 
                     } else if (choice == 4 && player1Token4 > 0) {
@@ -170,7 +184,9 @@ public class Ludo {
                         if (player1Token4 + dice <= finishPosition) {
                             player1Token4 = player1Token4 + dice;
                         } else {
-                            System.out.println("Cannot move. You need an exact number to reach home.");
+                            System.out.println(
+                                "Cannot move. You need an exact number to reach home."
+                            );
                         }
 
                     } else {
@@ -184,7 +200,9 @@ public class Ludo {
                         if (player2Token1 + dice <= finishPosition) {
                             player2Token1 = player2Token1 + dice;
                         } else {
-                            System.out.println("Cannot move. You need an exact number to reach home.");
+                            System.out.println(
+                                "Cannot move. You need an exact number to reach home."
+                            );
                         }
 
                     } else if (choice == 2 && player2Token2 > 0) {
@@ -192,7 +210,9 @@ public class Ludo {
                         if (player2Token2 + dice <= finishPosition) {
                             player2Token2 = player2Token2 + dice;
                         } else {
-                            System.out.println("Cannot move. You need an exact number to reach home.");
+                            System.out.println(
+                                "Cannot move. You need an exact number to reach home."
+                            );
                         }
 
                     } else if (choice == 3 && player2Token3 > 0) {
@@ -200,7 +220,9 @@ public class Ludo {
                         if (player2Token3 + dice <= finishPosition) {
                             player2Token3 = player2Token3 + dice;
                         } else {
-                            System.out.println("Cannot move. You need an exact number to reach home.");
+                            System.out.println(
+                                "Cannot move. You need an exact number to reach home."
+                            );
                         }
 
                     } else if (choice == 4 && player2Token4 > 0) {
@@ -208,7 +230,9 @@ public class Ludo {
                         if (player2Token4 + dice <= finishPosition) {
                             player2Token4 = player2Token4 + dice;
                         } else {
-                            System.out.println("Cannot move. You need an exact number to reach home.");
+                            System.out.println(
+                                "Cannot move. You need an exact number to reach home."
+                            );
                         }
 
                     } else {
@@ -229,6 +253,26 @@ public class Ludo {
             System.out.println("Player 2 Token 2: " + player2Token2);
             System.out.println("Player 2 Token 3: " + player2Token3);
             System.out.println("Player 2 Token 4: " + player2Token4);
+
+            // Check if Player 1 wins
+            if (player1Token1 == finishPosition &&
+                player1Token2 == finishPosition &&
+                player1Token3 == finishPosition &&
+                player1Token4 == finishPosition) {
+
+                System.out.println("🏆 Player 1 Wins!");
+                break;
+            }
+
+            // Check if Player 2 wins
+            if (player2Token1 == finishPosition &&
+                player2Token2 == finishPosition &&
+                player2Token3 == finishPosition &&
+                player2Token4 == finishPosition) {
+
+                System.out.println("🏆 Player 2 Wins!");
+                break;
+            }
 
             // Change player only when dice is NOT 6
             if (dice != 6) {
