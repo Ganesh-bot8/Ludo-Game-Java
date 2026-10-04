@@ -8,7 +8,7 @@ public class Ludo {
         Scanner input = new Scanner(System.in);
 
         int player = 1;
-        int finishPosition = 20;
+        int finishPosition = 52;
 
         int player1Token1 = 0;
         int player1Token2 = 0;
