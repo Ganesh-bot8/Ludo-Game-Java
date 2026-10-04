@@ -1,10 +1,19 @@
 import java.util.Random;
-  
-  public class Ludo {
-    public static void main (String[] args) {
-   Random random = new Random();
-    int dice = random.nextInt(6) + 1;
+import java.util.Scanner;
 
-  System.out.println("You rolled: " + dice);
- }
+public class Ludo {
+    public static void main(String[] args) {
+
+     Random random = new Random();
+     Scanner input = new Scanner(System.in);
+
+        System.out.println("Welcome to Ludo Game!");
+        System.out.println("Press Enter to roll the dice.");
+
+        input.nextLine();
+
+        int dice = random.nextInt(6) + 1;
+
+        System.out.println("You rolled: " + dice);
+    }
 }
