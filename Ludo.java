@@ -65,7 +65,15 @@ public class Ludo {
                         System.out.println("This token is not out yet.");
                     }
 
-                    if (moved && player1Token1 < finishPosition) {
+                    if (moved && player1Token1 < finishPosition &&
+                        player1Token1 != 5 &&
+                        player1Token1 != 12 &&
+                        player1Token1 != 17 &&
+                        player1Token1 != 23 &&
+                        player1Token1 != 29 &&
+                        player1Token1 != 34 &&
+                        player1Token1 != 40 &&
+                        player1Token1 != 46) {
 
                         if (player1Token1 == player2Token1 && player2Token1 > 0) {
                             player2Token1 = 0;
@@ -100,7 +108,15 @@ public class Ludo {
                         System.out.println("This token is not out yet.");
                     }
 
-                    if (moved && player1Token2 < finishPosition) {
+                    if (moved && player1Token2 < finishPosition &&
+                        player1Token2 != 5 &&
+                        player1Token2 != 12 &&
+                        player1Token2 != 17 &&
+                        player1Token2 != 23 &&
+                        player1Token2 != 29 &&
+                        player1Token2 != 34 &&
+                        player1Token2 != 40 &&
+                        player1Token2 != 46) {
 
                         if (player1Token2 == player2Token1 && player2Token1 > 0) {
                             player2Token1 = 0;
@@ -135,7 +151,15 @@ public class Ludo {
                         System.out.println("This token is not out yet.");
                     }
 
-                    if (moved && player1Token3 < finishPosition) {
+                    if (moved && player1Token3 < finishPosition &&
+                        player1Token3 != 5 &&
+                        player1Token3 != 12 &&
+                        player1Token3 != 17 &&
+                        player1Token3 != 23 &&
+                        player1Token3 != 29 &&
+                        player1Token3 != 34 &&
+                        player1Token3 != 40 &&
+                        player1Token3 != 46) {
 
                         if (player1Token3 == player2Token1 && player2Token1 > 0) {
                             player2Token1 = 0;
@@ -170,7 +194,15 @@ public class Ludo {
                         System.out.println("This token is not out yet.");
                     }
 
-                    if (moved && player1Token4 < finishPosition) {
+                    if (moved && player1Token4 < finishPosition &&
+                        player1Token4 != 5 &&
+                        player1Token4 != 12 &&
+                        player1Token4 != 17 &&
+                        player1Token4 != 23 &&
+                        player1Token4 != 29 &&
+                        player1Token4 != 34 &&
+                        player1Token4 != 40 &&
+                        player1Token4 != 46) {
 
                         if (player1Token4 == player2Token1 && player2Token1 > 0) {
                             player2Token1 = 0;
@@ -208,7 +240,15 @@ public class Ludo {
                         System.out.println("This token is not out yet.");
                     }
 
-                    if (moved && player2Token1 < finishPosition) {
+                    if (moved && player2Token1 < finishPosition &&
+                        player2Token1 != 5 &&
+                        player2Token1 != 12 &&
+                        player2Token1 != 17 &&
+                        player2Token1 != 23 &&
+                        player2Token1 != 29 &&
+                        player2Token1 != 34 &&
+                        player2Token1 != 40 &&
+                        player2Token1 != 46) {
 
                         if (player2Token1 == player1Token1 && player1Token1 > 0) {
                             player1Token1 = 0;
@@ -243,7 +283,15 @@ public class Ludo {
                         System.out.println("This token is not out yet.");
                     }
 
-                    if (moved && player2Token2 < finishPosition) {
+                    if (moved && player2Token2 < finishPosition &&
+                        player2Token2 != 5 &&
+                        player2Token2 != 12 &&
+                        player2Token2 != 17 &&
+                        player2Token2 != 23 &&
+                        player2Token2 != 29 &&
+                        player2Token2 != 34 &&
+                        player2Token2 != 40 &&
+                        player2Token2 != 46) {
 
                         if (player2Token2 == player1Token1 && player1Token1 > 0) {
                             player1Token1 = 0;
@@ -278,7 +326,15 @@ public class Ludo {
                         System.out.println("This token is not out yet.");
                     }
 
-                    if (moved && player2Token3 < finishPosition) {
+                    if (moved && player2Token3 < finishPosition &&
+                        player2Token3 != 5 &&
+                        player2Token3 != 12 &&
+                        player2Token3 != 17 &&
+                        player2Token3 != 23 &&
+                        player2Token3 != 29 &&
+                        player2Token3 != 34 &&
+                        player2Token3 != 40 &&
+                        player2Token3 != 46) {
 
                         if (player2Token3 == player1Token1 && player1Token1 > 0) {
                             player1Token1 = 0;
@@ -313,7 +369,15 @@ public class Ludo {
                         System.out.println("This token is not out yet.");
                     }
 
-                    if (moved && player2Token4 < finishPosition) {
+                    if (moved && player2Token4 < finishPosition &&
+                        player2Token4 != 5 &&
+                        player2Token4 != 12 &&
+                        player2Token4 != 17 &&
+                        player2Token4 != 23 &&
+                        player2Token4 != 29 &&
+                        player2Token4 != 34 &&
+                        player2Token4 != 40 &&
+                        player2Token4 != 46) {
 
                         if (player2Token4 == player1Token1 && player1Token1 > 0) {
                             player1Token1 = 0;
