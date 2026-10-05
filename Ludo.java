@@ -20,6 +20,11 @@ public class Ludo {
         int player2Token3 = 0;
         int player2Token4 = 0;
 
+        int player3Token1 = 0;
+        int player3Token2 = 0;
+        int player3Token3 = 0;
+        int player3Token4 = 0;
+
         System.out.println("Welcome to Ludo Game!");
 
         while (true) {
@@ -87,6 +92,18 @@ public class Ludo {
                         } else if (player1Token1 == player2Token4 && player2Token4 > 0) {
                             player2Token4 = 0;
                             System.out.println("Player 1 killed Player 2 Token 4!");
+                        } else if (player1Token1 == player3Token1 && player3Token1 > 0) {
+                            player3Token1 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 1!");
+                        } else if (player1Token1 == player3Token2 && player3Token2 > 0) {
+                            player3Token2 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 2!");
+                        } else if (player1Token1 == player3Token3 && player3Token3 > 0) {
+                            player3Token3 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 3!");
+                        } else if (player1Token1 == player3Token4 && player3Token4 > 0) {
+                            player3Token4 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 4!");
                         }
                     }
 
@@ -130,6 +147,18 @@ public class Ludo {
                         } else if (player1Token2 == player2Token4 && player2Token4 > 0) {
                             player2Token4 = 0;
                             System.out.println("Player 1 killed Player 2 Token 4!");
+                        } else if (player1Token2 == player3Token1 && player3Token1 > 0) {
+                            player3Token1 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 1!");
+                        } else if (player1Token2 == player3Token2 && player3Token2 > 0) {
+                            player3Token2 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 2!");
+                        } else if (player1Token2 == player3Token3 && player3Token3 > 0) {
+                            player3Token3 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 3!");
+                        } else if (player1Token2 == player3Token4 && player3Token4 > 0) {
+                            player3Token4 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 4!");
                         }
                     }
 
@@ -173,6 +202,18 @@ public class Ludo {
                         } else if (player1Token3 == player2Token4 && player2Token4 > 0) {
                             player2Token4 = 0;
                             System.out.println("Player 1 killed Player 2 Token 4!");
+                        } else if (player1Token3 == player3Token1 && player3Token1 > 0) {
+                            player3Token1 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 1!");
+                        } else if (player1Token3 == player3Token2 && player3Token2 > 0) {
+                            player3Token2 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 2!");
+                        } else if (player1Token3 == player3Token3 && player3Token3 > 0) {
+                            player3Token3 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 3!");
+                        } else if (player1Token3 == player3Token4 && player3Token4 > 0) {
+                            player3Token4 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 4!");
                         }
                     }
 
@@ -216,11 +257,23 @@ public class Ludo {
                         } else if (player1Token4 == player2Token4 && player2Token4 > 0) {
                             player2Token4 = 0;
                             System.out.println("Player 1 killed Player 2 Token 4!");
+                        } else if (player1Token4 == player3Token1 && player3Token1 > 0) {
+                            player3Token1 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 1!");
+                        } else if (player1Token4 == player3Token2 && player3Token2 > 0) {
+                            player3Token2 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 2!");
+                        } else if (player1Token4 == player3Token3 && player3Token3 > 0) {
+                            player3Token3 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 3!");
+                        } else if (player1Token4 == player3Token4 && player3Token4 > 0) {
+                            player3Token4 = 0;
+                            System.out.println("Player 1 killed Player 3 Token 4!");
                         }
                     }
                 }
 
-            } else {
+            } else if (player == 2) {
 
                 if (choice == 1) {
 
@@ -262,6 +315,18 @@ public class Ludo {
                         } else if (player2Token1 == player1Token4 && player1Token4 > 0) {
                             player1Token4 = 0;
                             System.out.println("Player 2 killed Player 1 Token 4!");
+                        } else if (player2Token1 == player3Token1 && player3Token1 > 0) {
+                            player3Token1 = 0;
+                            System.out.println("Player 2 killed Player 3 Token 1!");
+                        } else if (player2Token1 == player3Token2 && player3Token2 > 0) {
+                            player3Token2 = 0;
+                            System.out.println("Player 2 killed Player 3 Token 2!");
+                        } else if (player2Token1 == player3Token3 && player3Token3 > 0) {
+                            player3Token3 = 0;
+                            System.out.println("Player 2 killed Player 3 Token 3!");
+                        } else if (player2Token1 == player3Token4 && player3Token4 > 0) {
+                            player3Token4 = 0;
+                            System.out.println("Player 2 killed Player 3 Token 4!");
                         }
                     }
 
@@ -305,6 +370,18 @@ public class Ludo {
                         } else if (player2Token2 == player1Token4 && player1Token4 > 0) {
                             player1Token4 = 0;
                             System.out.println("Player 2 killed Player 1 Token 4!");
+                        } else if (player2Token2 == player3Token1 && player3Token1 > 0) {
+                            player3Token1 = 0;
+                            System.out.println("Player 2 killed Player 3 Token 1!");
+                        } else if (player2Token2 == player3Token2 && player3Token2 > 0) {
+                            player3Token2 = 0;
+                            System.out.println("Player 2 killed Player 3 Token 2!");
+                        } else if (player2Token2 == player3Token3 && player3Token3 > 0) {
+                            player3Token3 = 0;
+                            System.out.println("Player 2 killed Player 3 Token 3!");
+                        } else if (player2Token2 == player3Token4 && player3Token4 > 0) {
+                            player3Token4 = 0;
+                            System.out.println("Player 2 killed Player 3 Token 4!");
                         }
                     }
 
@@ -326,117 +403,4 @@ public class Ludo {
                         System.out.println("This token is not out yet.");
                     }
 
-                    if (moved && player2Token3 < finishPosition &&
-                        player2Token3 != 5 &&
-                        player2Token3 != 12 &&
-                        player2Token3 != 17 &&
-                        player2Token3 != 23 &&
-                        player2Token3 != 29 &&
-                        player2Token3 != 34 &&
-                        player2Token3 != 40 &&
-                        player2Token3 != 46) {
-
-                        if (player2Token3 == player1Token1 && player1Token1 > 0) {
-                            player1Token1 = 0;
-                            System.out.println("Player 2 killed Player 1 Token 1!");
-                        } else if (player2Token3 == player1Token2 && player1Token2 > 0) {
-                            player1Token2 = 0;
-                            System.out.println("Player 2 killed Player 1 Token 2!");
-                        } else if (player2Token3 == player1Token3 && player1Token3 > 0) {
-                            player1Token3 = 0;
-                            System.out.println("Player 2 killed Player 1 Token 3!");
-                        } else if (player2Token3 == player1Token4 && player1Token4 > 0) {
-                            player1Token4 = 0;
-                            System.out.println("Player 2 killed Player 1 Token 4!");
-                        }
-                    }
-
-                } else if (choice == 4) {
-
-                    if (player2Token4 == 0 && dice == 6) {
-                        player2Token4 = 1;
-                        moved = true;
-                    } else if (player2Token4 > 0) {
-
-                        if (player2Token4 + dice <= finishPosition) {
-                            player2Token4 = player2Token4 + dice;
-                            moved = true;
-                        } else {
-                            System.out.println("Cannot move. You need an exact number to reach home.");
-                        }
-
-                    } else {
-                        System.out.println("This token is not out yet.");
-                    }
-
-                    if (moved && player2Token4 < finishPosition &&
-                        player2Token4 != 5 &&
-                        player2Token4 != 12 &&
-                        player2Token4 != 17 &&
-                        player2Token4 != 23 &&
-                        player2Token4 != 29 &&
-                        player2Token4 != 34 &&
-                        player2Token4 != 40 &&
-                        player2Token4 != 46) {
-
-                        if (player2Token4 == player1Token1 && player1Token1 > 0) {
-                            player1Token1 = 0;
-                            System.out.println("Player 2 killed Player 1 Token 1!");
-                        } else if (player2Token4 == player1Token2 && player1Token2 > 0) {
-                            player1Token2 = 0;
-                            System.out.println("Player 2 killed Player 1 Token 2!");
-                        } else if (player2Token4 == player1Token3 && player1Token3 > 0) {
-                            player1Token3 = 0;
-                            System.out.println("Player 2 killed Player 1 Token 3!");
-                        } else if (player2Token4 == player1Token4 && player1Token4 > 0) {
-                            player1Token4 = 0;
-                            System.out.println("Player 2 killed Player 1 Token 4!");
-                        }
-                    }
-                }
-            }
-
-            System.out.println();
-            System.out.println("Player 1 Token 1: " + player1Token1);
-            System.out.println("Player 1 Token 2: " + player1Token2);
-            System.out.println("Player 1 Token 3: " + player1Token3);
-            System.out.println("Player 1 Token 4: " + player1Token4);
-
-            System.out.println("Player 2 Token 1: " + player2Token1);
-            System.out.println("Player 2 Token 2: " + player2Token2);
-            System.out.println("Player 2 Token 3: " + player2Token3);
-            System.out.println("Player 2 Token 4: " + player2Token4);
-
-            if (player1Token1 == finishPosition &&
-                player1Token2 == finishPosition &&
-                player1Token3 == finishPosition &&
-                player1Token4 == finishPosition) {
-
-                System.out.println("Player 1 Wins!");
-                break;
-            }
-
-            if (player2Token1 == finishPosition &&
-                player2Token2 == finishPosition &&
-                player2Token3 == finishPosition &&
-                player2Token4 == finishPosition) {
-
-                System.out.println("Player 2 Wins!");
-                break;
-            }
-
-            if (dice != 6) {
-
-                if (player == 1) {
-                    player = 2;
-                } else {
-                    player = 1;
-                }
-
-            } else {
-
-                System.out.println("You rolled a 6! You get another turn.");
-            }
-        }
-    }
-}
+                    if (moved && player2Token3 < finishP
